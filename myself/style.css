@@ -20,9 +20,10 @@ a {
 }
 
 #content {
-    width: 1000px;
+    /* width: auto; */
     height: 1000px;
     margin-block: 100px;
+    margin-inline: 200px;
     background-color: aliceblue;
     color: black;
     display: flex;
@@ -44,28 +45,27 @@ a {
 }
 
 #go-top {
+    display: none;
     position: fixed;
     width: 60px;
     height: 60px;
     right: 20px;
     bottom: 20px;
+    border: none;
     border-radius: 100%;
     font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: rgba(240, 248, 255, 0.5);
     color: #000;
-    transition-duration: 2000ms;
+    transition-duration: 1000ms;
     transition-timing-function: cubic-bezier(0.08, 0.91, 0.24, 1.01);
 }
 
 #go-top:hover {
-    width: 65px;
-    height: 65px;
-    bottom: 25px;
+    width: 62px;
+    height: 62px;
     font-size: 25px;
     font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     color: aliceblue;
+    cursor: pointer;
 }
